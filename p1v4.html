@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Portfolio</title>
+    <meta key="Splatoon">
+    <meta key="Splatoon Community">
+    <meta key="Splatoon Ideas">
+    <meta key="Splatoon Balancing">
+    <link rel="icon" type="image/x-icon" href="sprites/Logo.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=SN+Pro:ital,wght@0,200..900;1,200..900&family=Sniglet:wght@400;800&display=swap" rel="stylesheet">
+</head>
+
+<body class="dark" id="body">
+    <header>
+        <div class="header_flex">
+            <div class="logo">
+                <a href="index.html">
+                    Portfolio
+                </a>
+            </div>
+            <nav>
+                <div class="navswitches">
+                    <button id="lightswitch"><img src="sprites/Sun.png" width="10px"> <br> Light</button>
+                    <script>
+                        document.getElementById("lightswitch").addEventListener("click", () => {
+                        document.getElementById("body").classList.replace("dark", "light");
+                        });
+                    </script>
+                    <button id="darkswitch"><img src="sprites/Moon.png" width="10px"> <br> Dark</button>
+                    <script>
+                        document.getElementById("darkswitch").addEventListener("click", () => {
+                        document.getElementById("body").classList.replace("light", "dark");
+                        });
+                    </script>
+                </div>
+                <div class="navbuttons">
+                    <a href="index.html">
+                        Homepage
+                    </a>
+                </div>
+                <div class="navflex">
+                    <a href="p1v4.html">
+                        P1v4
+                    </a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div class="banner"> <div class="banner" id="bannerblur"></div></div>
+
+    <div class="grid">
+        <a class="item" href="bio.html">
+            <img src="sprites/Bio1.png">
+            Kunstautobiografie
+        </a>
+    </div>
+
+</body>
+
+</html>
