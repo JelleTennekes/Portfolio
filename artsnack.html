@@ -55,15 +55,40 @@
     <div class="banner"> <div class="banner" id="bannerblur"></div></div>
 
     <div class="grid">
-        <a class="item" href="bio.html">
-            <img src="sprites/Bio1.png">
-            Kunstautobiografie
-        </a>
-        <a class="item" href="artsnack.html">
-            <img src="sprites/Bio1.png">
-            <br>
-            Artsnack
-        </a>
+        <button id="opdrachtbutton" class="item">
+            <h1>
+                De Opdracht
+            </h1>
+        </button>
+        <script>
+            document.getElementById("opdrachtbutton").addEventListener("click", () => {
+            document.getElementById("opdracht").classList.remove("hidden");
+            });
+        </script>
+        <div class="item hidden" style="grid-column: 2 / 4;" id="opdracht">
+            <h2>
+                Artsnack
+            </h2>
+            <p style="margin-bottom: 0;">
+                Ga op zoek naar een zelfportret van een kunstenaar. Dit kan een schilderij, beeld of tekening zijn. Het kunstwerk moet gemaakt zijn ná 1900. Het bevonden kunstwerk zet je een worddocument en je beantwoordt de
+            </p>
+            <details>
+                <summary>
+                    volgende vragen
+                </summary>
+                <ul>
+                    <li class="item">
+                        Benoem van dit zelfportret de maker, het jaartal en het materiaal
+                    </li>
+                    <li class="item">
+                        Wat vertelt dit kunstwerk volgens jou over bijvoorbeeld de karakter eigenschappen, emoties en omstandigheden van de kunstenaar?
+                    </li>
+                    <li class="item">
+                        Wat wil de maker met dit zelfportret vertellen? Is het enkel een esthetisch doel? Wil hij een verhaal vertellen? Zit er een achterliggende boodschap in zijn kunstwerk?
+                    </li>
+                </ul>
+            </details>
+        </div>
     </div>
 
 </body>

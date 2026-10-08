@@ -7,6 +7,11 @@ body {
 }
 
 
+a {
+    text-decoration: none;
+    color: #000DA8;
+}
+
 header {
     backdrop-filter: blur(5px);
     border-radius: 4vb;
@@ -14,6 +19,7 @@ header {
     box-shadow: 0px 0px 40px rgba(0, 13, 168, 0.1);
     position: sticky;
     top: -3vb;
+    z-index: 1;
 }
 
 
@@ -42,6 +48,16 @@ nav {
     width: 70%;
     margin: 0px auto;
     border-radius: 15px;
+}
+
+h1 {
+    font-family: SN Pro;
+    font-weight: 900;
+}
+
+h2 {
+    font-family: SN Pro;
+    font-weight: 890;
 }
 
 .logo {
@@ -74,11 +90,6 @@ nav {
     gap: 10px;
     justify-items: center;
     align-items: center;
-}
-
-a {
-    text-decoration: none;
-    color: #000DA8;
 }
 
 .header_flex div :hover {
@@ -140,10 +151,6 @@ a {
 
 .backgroundblur {
     backdrop-filter: blur(20px);
-}
-
-#bannerblur {
-    filter: blur(100px) opacity(30%);
 }
 
 .navbuttons a, .navflex a {
@@ -215,4 +222,46 @@ a {
     color: rgba(255, 242, 87, 0.9);
     border-radius: 1vb;
     padding: 18px 20px 22px;
+}
+
+.hidden {
+    display: none;
+}
+
+#opdrachtbutton {
+    background-color: rgba(0, 13, 168, 0.2);
+    border: 0.8vb solid #000DA8;
+    border-radius: 5vb;
+    backdrop-filter: blur(3px);
+    padding: 3%;
+    box-shadow: 2px 5px 5px rgba(255, 242, 87, 0.1);
+    text-align: center;
+    font-family: SN Pro !important;
+    font-weight: 900 !important;
+    color: #FFF257;
+}
+
+#bannerblur {
+    filter: blur(100px) opacity(30%);
+}
+
+summary {
+    user-select: none;
+    list-style-type: none;
+    border-radius: 1vb;
+    box-shadow: 0px 4px 10px #FFF257;
+    padding: 2px;
+    background-color: #333a97;
+    width: 60%;
+    justify-self: center;
+}
+
+summary:hover {
+    cursor: pointer;
+}
+
+.opdrachtimage {
+    width: 100% !important;
+    position: relative;
+    z-index: 10;
 }
