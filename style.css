@@ -120,10 +120,11 @@ h2 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     backdrop-filter: blur(7px);
-    gap: 25% 2%;
+    gap: 25px 2%;
     width: 90%;
     justify-self: center;
     box-shadow: 3px 10px 15px rgba(0, 13, 168, 0.5);
+    overflow: auto;
 }
 
 .grid .item {
